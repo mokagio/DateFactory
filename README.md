@@ -2,9 +2,9 @@
 
 [![Build Status](https://travis-ci.org/mokagio/DateFactory.svg?branch=master)](https://travis-ci.org/mokagio/DateFactory)
 
-A n-framework for creating `NSDate`, to be used in your unit tests.
+An n-framework for creating `NSDate`, to be used in your unit tests.
 
-## What's a _n-framework_?
+## What's an _n-framework_?
 
 It's a framework even smaller than a μ-framework, which you should consider
 using by **copying it's single source and tests files** in your project rather
