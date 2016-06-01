@@ -2,7 +2,21 @@
 
 [![Build Status](https://travis-ci.org/mokagio/DateFactory.svg?branch=master)](https://travis-ci.org/mokagio/DateFactory)
 
-A μframework for creating `NSDate`, to be used in your unit tests.
+A n-framework for creating `NSDate`, to be used in your unit tests.
+
+## What's a _n-framework_?
+
+It's a framework even smaller than a μ-framework, which you should consider
+using by **copying it's single source and tests files** in your project rather
+than going through the trouble of using a dependency manager.
+
+## Why did you make this?
+
+Two reasons:
+
+- I wanted an easier way to create fixture `NSDate` in my tests than
+using `NSDateFormatter`.
+- I wanted to experiment with multiplaform framework, SPM, etc, in a small project.
 
 ---
 
