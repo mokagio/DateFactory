@@ -10,6 +10,7 @@
 		3F9CDD7D1CFEE4CE007854CC /* DateFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F9CDD7C1CFEE4CE007854CC /* DateFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F9CDD841CFEE4CE007854CC /* DateFactory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9CDD791CFEE4CE007854CC /* DateFactory.framework */; };
 		3F9CDD891CFEE4CE007854CC /* DateFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CDD881CFEE4CE007854CC /* DateFactoryTests.swift */; };
+		3F9CDD941CFEED1A007854CC /* NSDate+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CDD931CFEED1A007854CC /* NSDate+Factory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		3F9CDD831CFEE4CE007854CC /* DateFactoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DateFactoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9CDD881CFEE4CE007854CC /* DateFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFactoryTests.swift; sourceTree = "<group>"; };
 		3F9CDD8A1CFEE4CE007854CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F9CDD931CFEED1A007854CC /* NSDate+Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Factory.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			children = (
 				3F9CDD7C1CFEE4CE007854CC /* DateFactory.h */,
 				3F9CDD7E1CFEE4CE007854CC /* Info.plist */,
+				3F9CDD931CFEED1A007854CC /* NSDate+Factory.swift */,
 			);
 			path = DateFactory;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F9CDD941CFEED1A007854CC /* NSDate+Factory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +316,7 @@
 		3F9CDD8E1CFEE4CE007854CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -322,12 +327,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mokagio.DateFactory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		3F9CDD8F1CFEE4CE007854CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
