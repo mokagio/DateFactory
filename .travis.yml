@@ -5,4 +5,6 @@ script:
   # Workaround for Simulator getting stuck
   # See: https://github.com/travis-ci/travis-ci/issues/3040#issuecomment-146700203
   - open -b com.apple.iphonesimulator
+  - ./bin/build
   - ./bin/test
+  - ./bin/integration_tests
