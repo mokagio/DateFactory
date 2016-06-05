@@ -2,4 +2,11 @@
 
 set -e
 
+# Remove Packages folder to ensure pristing environment
+rm -rf Packages
+
+# Build the fake package, this will:
+#
+# 1. Download DateFactory via SPM
+# 2. Ensure that it can be integrated, because the fake packgae imports and usess it.
 swift build
