@@ -46,3 +46,7 @@ xcuserdata
 
 Carthage/Build
 
+# SPM
+#
+.build/
+Packages

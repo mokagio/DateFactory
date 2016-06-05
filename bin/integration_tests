@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -e
+
+#
+# SPM
+#
+pushd IntegrationTests/SPM
+./test
+popd
