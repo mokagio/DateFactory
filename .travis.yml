@@ -13,3 +13,7 @@ script:
   - ./bin/build
   - ./bin/test
   - ./bin/integration_tests
+
+addons:
+  code_climate:
+    repo_token: a0661f420443fbe044ac0545a161168dd328dcb6419e972be5919949b2000208
