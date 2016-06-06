@@ -16,4 +16,4 @@ script:
   - ./bin/integration_tests
 
 after_success:
-  - bundle exec slather --coveralls --travis
+  - bundle exec slather coverage --coveralls --travis
