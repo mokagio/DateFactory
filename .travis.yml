@@ -5,6 +5,7 @@ osx_image: xcode7.3
 # See: https://github.com/kylef/swiftenv/blob/master/docs/integrations/travis-ci.md
 install:
   - eval "$(curl -sL https://gist.githubusercontent.com/kylef/5c0475ff02b7c7671d2a/raw/9f442512a46d7a2af7b850d65a7e9bd31edfb09b/swiftenv-install.sh)"
+  - bundle install
 
 script:
   # Workaround for Simulator getting stuck
@@ -13,3 +14,6 @@ script:
   - ./bin/build
   - ./bin/test
   - ./bin/integration_tests
+
+after_success:
+  - bundle exec slather --coveralls --travis

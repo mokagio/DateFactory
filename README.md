@@ -1,6 +1,7 @@
 # DateFactory
 
 [![Build Status](https://travis-ci.org/mokagio/DateFactory.svg?branch=master)](https://travis-ci.org/mokagio/DateFactory)
+[![Coverage Status](https://coveralls.io/repos/github/mokagio/DateFactory/badge.svg?branch=master)](https://coveralls.io/github/mokagio/DateFactory?branch=master)
 
 An n-framework for creating `NSDate`, to be used in your unit tests.
 
