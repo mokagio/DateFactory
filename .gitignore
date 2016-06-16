@@ -41,10 +41,10 @@ xcuserdata
 
 # Carthage
 #
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
-
-Carthage/Build
+# Ignore the source, but track the binary, so that checkouts will work out of
+# the box
+Carthage/Checkouts
+!Carthage/Build
 
 # SPM
 #
