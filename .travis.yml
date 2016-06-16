@@ -17,3 +17,4 @@ script:
 
 after_success:
   - bundle exec slather coverage --coveralls --travis
+  - bash <(curl -s https://codecov.io/bash)
