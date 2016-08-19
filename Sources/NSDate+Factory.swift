@@ -11,30 +11,31 @@ import Foundation
 
 /// This `NSDate` extension provides a builder method intended to be used to
 /// simplify creating dates in unit tests.
-extension NSDate {
+extension Date {
 
   public static func date(
-    year year: Int = 1970,
-         month: Int = 01,
-         day: Int = 01,
-         hour: Int = 00,
-         minute: Int = 00,
-         second: Int = 00,
-         millisecond: Int = 000,
-         timeZone: NSTimeZone = NSTimeZone(forSecondsFromGMT: 0)
-    ) -> NSDate {
-    let components = NSDateComponents()
-    components.calendar = NSCalendar(identifier: NSCalendarIdentifierGregorian)
-    components.timeZone = timeZone
-    components.year = year
-    components.month = month
-    components.day = day
-    components.hour = hour
-    components.minute = minute
-    components.second = second
-    components.nanosecond = millisecond * 1000000
+    year: Int = 1970,
+    month: Int = 01,
+    day: Int = 01,
+    hour: Int = 00,
+    minute: Int = 00,
+    second: Int = 00,
+    millisecond: Int = 000,
+    timeZone: TimeZone = TimeZone(secondsFromGMT: 0)!
+    ) -> Date {
+    let components = DateComponents(
+      calendar: Calendar(identifier: Calendar.Identifier.gregorian),
+      timeZone: timeZone,
+      year: year,
+      month: month,
+      day: day,
+      hour: hour,
+      minute: minute,
+      second: second,
+      nanosecond: millisecond * 1_000_000
+    )
 
-    guard let date = components.date else {
+    guard let date = (components as DateComponents).date else {
       preconditionFailure("Could not init NSDate from NSDateComponents")
     }
 
