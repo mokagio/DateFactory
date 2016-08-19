@@ -5,6 +5,12 @@
 
 An n-framework for creating `NSDate`, to be used in your unit tests.
 
+Swift version | Framework version
+--- | ---
+2.2 | 1.0.0
+2.3 | master
+3.0 | swift-3
+
 ## What's an _n-framework_?
 
 It's a framework even smaller than a μ-framework, which you should consider
